@@ -1,8 +1,22 @@
 <script lang="ts">
 	import { twMerge } from 'tailwind-merge';
-	export let className = '';
-	export let focused = false;
-	export let onClick = (_: any) => {};
+	//export let focused = $state(false);
+	//export let className = '';
+	//export let onClick = (_: any) => {};
+	//export let onFocus = (_: any) => {};
+	let {
+		className = '',
+		onClick = () => {},
+		onFocus = () => {},
+		focused = false,
+		children
+	} = $props<{
+		className: string;
+		onClick: (_: any) => void;
+		onFocus: (_: any) => void;
+		focused: boolean;
+		children: any;
+	}>();
 </script>
 
 <div
@@ -12,7 +26,8 @@
 		className
 	)}
 	onclick={onClick}
+	onfocus={onFocus}
 	role="none"
 >
-	<slot />
+	{@render children()}
 </div>

@@ -4,12 +4,12 @@
 
 @font-face {
 	font-family: "JetBrains Mono";
-	src: url('/static/fonts/JetBrainsMono[wght].ttf');
+	src: url('/fonts/JetBrainsMono[wght].ttf');
 }
 
 @font-face {
 	font-family: "JetBrains Mono";
-	src: url('/static/fonts/JetBrainsMono-Italic[wght].ttf');
+	src: url('/fonts/JetBrainsMono-Italic[wght].ttf');
 	font-style: italic
 }
 

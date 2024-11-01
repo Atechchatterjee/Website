@@ -30,11 +30,14 @@
 </script>
 
 <Block className="gap-3 py-4 text-lg text-[#535365]" {focused} {onClick}>
-	<p class="text-white">Sections:</p>
+	<div class="flex gap-4">
+		<p class="text-white">Sections:</p>
+		<p class="ml-auto italic">Use j, k or arrow keys to move up and down</p>
+	</div>
 	<div class="ml-8 flex flex-col gap-2">
 		<div
 			class="flex w-fit cursor-pointer gap-5"
-			onmousemove={() => (selectedSection = 0)}
+			onmousemove={() => focused && (selectedSection = 0)}
 			role="button"
 			tabindex={0}
 		>
@@ -46,7 +49,7 @@
 
 		<div
 			class="flex w-fit cursor-pointer gap-5"
-			onmousemove={() => (selectedSection = 1)}
+			onmousemove={() => focused && (selectedSection = 1)}
 			role="button"
 			tabindex={1}
 		>
@@ -58,7 +61,7 @@
 
 		<div
 			class="flex w-fit cursor-pointer gap-5"
-			onmousemove={() => (selectedSection = 2)}
+			onmousemove={() => focused && (selectedSection = 2)}
 			role="button"
 			tabindex={2}
 		>
@@ -70,7 +73,7 @@
 
 		<div
 			class="flex w-fit cursor-pointer gap-5"
-			onmousemove={() => (selectedSection = 3)}
+			onmousemove={() => focused && (selectedSection = 3)}
 			role="button"
 			tabindex={3}
 		>

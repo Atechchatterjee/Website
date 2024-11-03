@@ -12,7 +12,13 @@
 	}>();
 </script>
 
-<Block className="gap-9 pt-4 pb-7 text-lg text-[#535365]" {focused} {onClick} {onFocus}>
+<Block
+	id="contact-block"
+	className="gap-9 pt-4 pb-7 text-lg text-[#535365]"
+	{focused}
+	{onClick}
+	{onFocus}
+>
 	<p class="text-lg font-medium text-white">Contact</p>
 	<div class="flex flex-col gap-2">
 		Reach out at
@@ -30,3 +36,5 @@
 		</span>
 	</div>
 </Block>
+{console.log(document.getElementById('contact-block'))}
+{document.getElementById('contact-block')?.scrollIntoView()}

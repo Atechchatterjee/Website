@@ -12,7 +12,13 @@
 	}>();
 </script>
 
-<Block className="gap-3 py-4 text-lg text-[#535365]" {focused} {onClick} {onFocus}>
+<Block
+	id="experience-block"
+	className="gap-3 py-4 text-lg text-[#535365]"
+	{focused}
+	{onClick}
+	{onFocus}
+>
 	<p class="text-lg font-medium text-white">Experience</p>
 	<div class="ml-8 flex flex-col gap-2">
 		<p class="italic text-white">Software Engineer Intern</p>

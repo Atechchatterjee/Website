@@ -27,7 +27,13 @@
 	}
 </script>
 
-<Block className="gap-3 py-4 text-lg text-[#535365]" {focused} {onClick} {onFocus}>
+<Block
+	className="gap-3 py-4 text-lg text-[#535365]"
+	id="project-block"
+	{focused}
+	{onClick}
+	{onFocus}
+>
 	<p class="text-lg text-white">Projects</p>
 	<div class="ml-8 flex flex-col gap-2">
 		<div

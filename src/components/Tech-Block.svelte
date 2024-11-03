@@ -25,7 +25,13 @@
 	}>();
 </script>
 
-<Block className="gap-9 pt-4 pb-7 text-lg text-[#535365]" {focused} {onClick} {onFocus}>
+<Block
+	id="tech-block"
+	className="gap-9 pt-4 pb-7 text-lg text-[#535365]"
+	{focused}
+	{onClick}
+	{onFocus}
+>
 	<p class="text-lg font-medium text-white">Tech</p>
 	<div class="flex flex-col gap-2">
 		<div class="flex flex-wrap gap-10">
